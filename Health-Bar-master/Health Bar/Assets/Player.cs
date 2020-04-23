@@ -12,12 +12,15 @@ public class Player : MonoBehaviour
 
     public HealthBar healthBar2;
 
+    public HealthBar healthBar3;
+
     // Start is called before the first frame update
     void Start()
     {
 		currentHealth = maxHealth;
 		healthBar.SetMaxHealth(maxHealth);
         healthBar2.SetMaxHealth(maxHealth);
+        healthBar3.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -35,5 +38,6 @@ public class Player : MonoBehaviour
 
 		healthBar.SetHealth(currentHealth);
         healthBar2.SetHealth(currentHealth);
+        healthBar3.SetHealth(currentHealth);
     }
 }
